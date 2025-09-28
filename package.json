@@ -1,0 +1,6 @@
+{
+  "license": "MIT",
+  "dependencies": {
+    "class-variance-authority": "^0.7.1"
+  }
+}
