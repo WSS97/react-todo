@@ -7,6 +7,7 @@ import Button from "./components/button";
 import ButtonIcon from "./components/buttonIncon";
 import InputText from "./components/inputText";
 import InputCheckbox from "./components/inputCheckbox";
+import Card from "./components/card";
 
 export default function App() {
   return (
@@ -21,29 +22,33 @@ export default function App() {
           <Icon svg={TrashIcon} className="fill-[var(--color-green-base)]" />
           <Icon svg={SpinIcon} animate />
         </Text>
-      </div>
 
-      <div>
-        <Badge variant="secondary">5</Badge>
-        <Badge>2 de 5</Badge>
-      </div>
+        <div>
+          <Badge variant="secondary">5</Badge>
+          <Badge>2 de 5</Badge>
+        </div>
 
-      <div>
-        <Button>Nova tarefa</Button>
-      </div>
+        <div>
+          <Button>Nova tarefa</Button>
+        </div>
 
-      <div className="flex gap-1">
-        <ButtonIcon icon={TrashIcon} />
-        <ButtonIcon icon={TrashIcon} variant="secondary" />
-        <ButtonIcon icon={TrashIcon} variant="tertiary" />
-      </div>
+        <div className="flex gap-1">
+          <ButtonIcon icon={TrashIcon} />
+          <ButtonIcon icon={TrashIcon} variant="secondary" />
+          <ButtonIcon icon={TrashIcon} variant="tertiary" />
+        </div>
 
-      <div>
-        <InputText />
-      </div>
+        <div>
+          <InputText />
+        </div>
 
-      <div>
-        <InputCheckbox />
+        <div>
+          <InputCheckbox />
+        </div>
+
+        <div>
+          <Card size="md"> Ola mundo </Card>
+        </div>
       </div>
     </div>
   );
