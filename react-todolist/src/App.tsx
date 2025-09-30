@@ -8,48 +8,51 @@ import ButtonIcon from "./components/buttonIncon";
 import InputText from "./components/inputText";
 import InputCheckbox from "./components/inputCheckbox";
 import Card from "./components/card";
+import Container from "./components/container";
 
 export default function App() {
   return (
-    <div className="grid gap3">
-      <div className="flex flex-col gap-1">
-        <Text
-          as="h1"
-          variant="body-sm-bold"
-          className="text-[var(--color-pink-light)] font-cairo"
-        >
-          Hello World
-          <Icon svg={TrashIcon} className="fill-[var(--color-green-base)]" />
-          <Icon svg={SpinIcon} animate />
-        </Text>
+    <Container>
+      <div className="grid gap3">
+        <div className="flex flex-col gap-1">
+          <Text
+            as="h1"
+            variant="body-sm-bold"
+            className="text-[var(--color-pink-light)] font-cairo"
+          >
+            Hello World
+            <Icon svg={TrashIcon} className="fill-[var(--color-green-base)]" />
+            <Icon svg={SpinIcon} animate />
+          </Text>
 
-        <div>
-          <Badge variant="secondary">5</Badge>
-          <Badge>2 de 5</Badge>
-        </div>
+          <div>
+            <Badge variant="secondary">5</Badge>
+            <Badge>2 de 5</Badge>
+          </div>
 
-        <div>
-          <Button>Nova tarefa</Button>
-        </div>
+          <div>
+            <Button>Nova tarefa</Button>
+          </div>
 
-        <div className="flex gap-1">
-          <ButtonIcon icon={TrashIcon} />
-          <ButtonIcon icon={TrashIcon} variant="secondary" />
-          <ButtonIcon icon={TrashIcon} variant="tertiary" />
-        </div>
+          <div className="flex gap-1">
+            <ButtonIcon icon={TrashIcon} />
+            <ButtonIcon icon={TrashIcon} variant="secondary" />
+            <ButtonIcon icon={TrashIcon} variant="tertiary" />
+          </div>
 
-        <div>
-          <InputText />
-        </div>
+          <div>
+            <InputText />
+          </div>
 
-        <div>
-          <InputCheckbox />
-        </div>
+          <div>
+            <InputCheckbox />
+          </div>
 
-        <div>
-          <Card size="md"> Ola mundo </Card>
+          <div>
+            <Card size="md"> Ola mundo </Card>
+          </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
